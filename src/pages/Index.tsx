@@ -40,14 +40,14 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary/80">
-        <div className="container mx-auto flex items-center justify-between h-16 px-4">
-          <img src={logo} alt="Engady Tecnologia" className="h-[52px] rounded" />
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-primary-foreground/80">
+        <div className="container mx-auto flex items-center justify-between h-[84px] px-4">
+          <img src={logo} alt="Engady Tecnologia" className="h-[68px] rounded" />
+          <div className="hidden md:flex items-center gap-8 text-base font-medium text-primary-foreground/80">
             <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
             <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
             <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
           </div>
-          <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold">
+          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
             Fale Conosco
           </Button>
         </div>
@@ -84,7 +84,7 @@ const Index = () => {
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
                 Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-semibold">
+              <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground font-heading font-semibold">
                 Nossos Serviços
               </Button>
             </motion.div>
@@ -95,7 +95,7 @@ const Index = () => {
       {/* Sobre */}
       <section id="sobre" className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -108,31 +108,24 @@ const Index = () => {
                 Tecnologia que impulsiona o seu negócio
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                A Engady Tecnologia é uma empresa especializada em desenvolvimento de software, criando soluções digitais personalizadas que atendem às necessidades específicas de cada cliente. Combinamos expertise técnica com visão estratégica para entregar resultados excepcionais.
+                A Engady Tecnologia é uma empresa nova no mercado, fundada com a missão de criar soluções digitais personalizadas e acessíveis. Estamos começando do zero, mas com muita energia, conhecimento técnico e vontade de fazer a diferença.
               </p>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Nossa equipe é formada por profissionais apaixonados por tecnologia, comprometidos em transformar desafios complexos em soluções simples e eficientes.
+                Acreditamos que toda grande empresa começa com um primeiro passo. O nosso é entregar tecnologia de qualidade, com atendimento próximo e compromisso real com cada projeto. Queremos crescer junto com nossos clientes.
               </p>
-            </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeUp}
-              custom={1}
-              className="grid grid-cols-2 gap-6"
-            >
-              {[
-                { num: "50+", label: "Projetos Entregues" },
-                { num: "30+", label: "Clientes Satisfeitos" },
-                { num: "5+", label: "Anos de Experiência" },
-                { num: "99%", label: "Satisfação" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-muted rounded-lg p-6 text-center border border-border">
-                  <div className="text-3xl font-heading font-900 text-secondary">{stat.num}</div>
-                  <div className="mt-2 text-sm text-muted-foreground font-medium">{stat.label}</div>
-                </div>
-              ))}
+              <div className="mt-10 grid sm:grid-cols-3 gap-6">
+                {[
+                  { icon: "🚀", title: "Inovação", desc: "Soluções modernas com as tecnologias mais atuais do mercado." },
+                  { icon: "🤝", title: "Compromisso", desc: "Dedicação total a cada projeto, do início à entrega." },
+                  { icon: "💡", title: "Criatividade", desc: "Ideias que transformam desafios em oportunidades digitais." },
+                ].map((item) => (
+                  <div key={item.title} className="bg-muted rounded-lg p-6 border border-border">
+                    <div className="text-3xl mb-3">{item.icon}</div>
+                    <h3 className="font-heading font-bold text-foreground">{item.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>
