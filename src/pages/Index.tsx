@@ -41,7 +41,7 @@ const Index = () => {
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary/80">
         <div className="container mx-auto flex items-center justify-between h-[84px] px-4">
-          <img src={logo} alt="Engady Tecnologia" className="h-[68px] rounded" />
+          <img src={logo} alt="Engady Tecnologia" className="h-[90px] rounded" />
           <div className="hidden md:flex items-center gap-8 text-base font-medium text-primary-foreground/80">
             <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
             <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
@@ -84,7 +84,7 @@ const Index = () => {
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
                 Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground font-heading font-semibold">
+              <Button size="lg" className="bg-transparent border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 font-heading font-semibold">
                 Nossos Serviços
               </Button>
             </motion.div>
