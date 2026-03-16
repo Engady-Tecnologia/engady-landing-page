@@ -179,8 +179,8 @@ const Index = () => {
             <p className="mt-6 text-primary-foreground/70 text-lg max-w-xl mx-auto">
               Entre em contato e descubra como podemos ajudar sua empresa a crescer com tecnologia.
             </p>
-            <Button size="lg" className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
-              Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" />
+            <Button asChild size="lg" className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
+              <a href="#contato">Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" /></a>
             </Button>
           </motion.div>
         </div>
