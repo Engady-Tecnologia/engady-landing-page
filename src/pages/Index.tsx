@@ -81,8 +81,8 @@ const Index = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
-                Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
+              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
+                <a href="#contato">Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" /></a>
               </Button>
               <Button size="lg" className="bg-transparent border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 font-heading font-semibold">
                 Nossos Serviços
