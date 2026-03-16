@@ -215,8 +215,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="gradient-primary py-10 border-t border-primary/80">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-          <img src={logo} alt="Engady Tecnologia" className="h-8 rounded" />
+        <div className="container mx-auto px-4 text-center">
           <p className="text-primary-foreground/60 text-sm">
             © {new Date().getFullYear()} Engady Tecnologia. Todos os direitos reservados.
           </p>
