@@ -40,14 +40,14 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary/80">
-        <div className="container mx-auto flex items-center justify-between h-16 px-4">
-          <img src={logo} alt="Engady Tecnologia" className="h-[52px] rounded" />
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-primary-foreground/80">
+        <div className="container mx-auto flex items-center justify-between h-[84px] px-4">
+          <img src={logo} alt="Engady Tecnologia" className="h-[68px] rounded" />
+          <div className="hidden md:flex items-center gap-8 text-base font-medium text-primary-foreground/80">
             <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
             <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
             <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
           </div>
-          <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold">
+          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
             Fale Conosco
           </Button>
         </div>
