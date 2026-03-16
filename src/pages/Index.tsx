@@ -47,8 +47,8 @@ const Index = () => {
             <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
             <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
           </div>
-          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
-            Fale Conosco
+          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
+            <a href="#contato">Fale Conosco</a>
           </Button>
         </div>
       </nav>
@@ -81,8 +81,8 @@ const Index = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
-                Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
+              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
+                <a href="#contato">Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" /></a>
               </Button>
               <Button size="lg" className="bg-transparent border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 font-heading font-semibold">
                 Nossos Serviços
@@ -179,8 +179,8 @@ const Index = () => {
             <p className="mt-6 text-primary-foreground/70 text-lg max-w-xl mx-auto">
               Entre em contato e descubra como podemos ajudar sua empresa a crescer com tecnologia.
             </p>
-            <Button size="lg" className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
-              Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" />
+            <Button asChild size="lg" className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
+              <a href="#contato">Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" /></a>
             </Button>
           </motion.div>
         </div>
