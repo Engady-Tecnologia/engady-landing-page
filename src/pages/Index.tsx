@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/engady-logo.png";
+import logo from "@/assets/engady-logo-original.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -41,7 +41,7 @@ const Index = () => {
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-primary/80">
         <div className="container mx-auto flex items-center justify-between h-16 px-4">
-          <img src={logo} alt="Engady Tecnologia" className="h-10 rounded" />
+          <img src={logo} alt="Engady Tecnologia" className="h-[52px] rounded" />
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-primary-foreground/80">
             <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
             <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
