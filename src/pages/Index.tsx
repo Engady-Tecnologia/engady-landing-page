@@ -95,7 +95,7 @@ const Index = () => {
       {/* Sobre */}
       <section id="sobre" className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -108,31 +108,24 @@ const Index = () => {
                 Tecnologia que impulsiona o seu negócio
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                A Engady Tecnologia é uma empresa especializada em desenvolvimento de software, criando soluções digitais personalizadas que atendem às necessidades específicas de cada cliente. Combinamos expertise técnica com visão estratégica para entregar resultados excepcionais.
+                A Engady Tecnologia é uma empresa nova no mercado, fundada com a missão de criar soluções digitais personalizadas e acessíveis. Estamos começando do zero, mas com muita energia, conhecimento técnico e vontade de fazer a diferença.
               </p>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Nossa equipe é formada por profissionais apaixonados por tecnologia, comprometidos em transformar desafios complexos em soluções simples e eficientes.
+                Acreditamos que toda grande empresa começa com um primeiro passo. O nosso é entregar tecnologia de qualidade, com atendimento próximo e compromisso real com cada projeto. Queremos crescer junto com nossos clientes.
               </p>
-            </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeUp}
-              custom={1}
-              className="grid grid-cols-2 gap-6"
-            >
-              {[
-                { num: "50+", label: "Projetos Entregues" },
-                { num: "30+", label: "Clientes Satisfeitos" },
-                { num: "5+", label: "Anos de Experiência" },
-                { num: "99%", label: "Satisfação" },
-              ].map((stat) => (
-                <div key={stat.label} className="bg-muted rounded-lg p-6 text-center border border-border">
-                  <div className="text-3xl font-heading font-900 text-secondary">{stat.num}</div>
-                  <div className="mt-2 text-sm text-muted-foreground font-medium">{stat.label}</div>
-                </div>
-              ))}
+              <div className="mt-10 grid sm:grid-cols-3 gap-6">
+                {[
+                  { icon: "🚀", title: "Inovação", desc: "Soluções modernas com as tecnologias mais atuais do mercado." },
+                  { icon: "🤝", title: "Compromisso", desc: "Dedicação total a cada projeto, do início à entrega." },
+                  { icon: "💡", title: "Criatividade", desc: "Ideias que transformam desafios em oportunidades digitais." },
+                ].map((item) => (
+                  <div key={item.title} className="bg-muted rounded-lg p-6 border border-border">
+                    <div className="text-3xl mb-3">{item.icon}</div>
+                    <h3 className="font-heading font-bold text-foreground">{item.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>
