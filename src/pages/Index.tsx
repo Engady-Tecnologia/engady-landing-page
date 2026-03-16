@@ -35,6 +35,10 @@ const services = [
   },
 ];
 
+const scrollTo = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
