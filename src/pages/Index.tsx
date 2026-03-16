@@ -84,7 +84,7 @@ const Index = () => {
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
                 Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground font-heading font-semibold">
+              <Button size="lg" className="bg-transparent border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 font-heading font-semibold">
                 Nossos Serviços
               </Button>
             </motion.div>
