@@ -35,6 +35,10 @@ const services = [
   },
 ];
 
+const scrollTo = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
@@ -43,12 +47,12 @@ const Index = () => {
         <div className="container mx-auto flex items-center justify-between h-[84px] px-4">
           <img src={logo} alt="Engady Tecnologia" className="h-[117px] rounded" />
           <div className="hidden md:flex items-center gap-8 text-base font-medium text-primary-foreground/80">
-            <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
-            <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
-            <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
+            <button onClick={() => scrollTo("sobre")} className="hover:text-secondary transition-colors">Sobre</button>
+            <button onClick={() => scrollTo("servicos")} className="hover:text-secondary transition-colors">Serviços</button>
+            <button onClick={() => scrollTo("contato")} className="hover:text-secondary transition-colors">Contato</button>
           </div>
-          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
-            <a href="#contato">Fale Conosco</a>
+          <Button onClick={() => scrollTo("contato")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
+            Fale Conosco
           </Button>
         </div>
       </nav>
@@ -81,8 +85,8 @@ const Index = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
-                <a href="#contato">Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" /></a>
+              <Button size="lg" onClick={() => scrollTo("contato")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
+                Solicitar Orçamento <ChevronRight className="ml-1 h-5 w-5" />
               </Button>
               <Button size="lg" className="bg-transparent border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 font-heading font-semibold">
                 Nossos Serviços
@@ -179,8 +183,8 @@ const Index = () => {
             <p className="mt-6 text-primary-foreground/70 text-lg max-w-xl mx-auto">
               Entre em contato e descubra como podemos ajudar sua empresa a crescer com tecnologia.
             </p>
-            <Button asChild size="lg" className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
-              <a href="#contato">Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" /></a>
+            <Button size="lg" onClick={() => scrollTo("contato")} className="mt-8 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-10">
+              Iniciar Projeto <ChevronRight className="ml-1 h-5 w-5" />
             </Button>
           </motion.div>
         </div>
