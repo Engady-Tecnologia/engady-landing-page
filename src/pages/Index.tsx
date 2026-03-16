@@ -47,12 +47,12 @@ const Index = () => {
         <div className="container mx-auto flex items-center justify-between h-[84px] px-4">
           <img src={logo} alt="Engady Tecnologia" className="h-[117px] rounded" />
           <div className="hidden md:flex items-center gap-8 text-base font-medium text-primary-foreground/80">
-            <a href="#sobre" className="hover:text-secondary transition-colors">Sobre</a>
-            <a href="#servicos" className="hover:text-secondary transition-colors">Serviços</a>
-            <a href="#contato" className="hover:text-secondary transition-colors">Contato</a>
+            <button onClick={() => scrollTo("sobre")} className="hover:text-secondary transition-colors">Sobre</button>
+            <button onClick={() => scrollTo("servicos")} className="hover:text-secondary transition-colors">Serviços</button>
+            <button onClick={() => scrollTo("contato")} className="hover:text-secondary transition-colors">Contato</button>
           </div>
-          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
-            <a href="#contato">Fale Conosco</a>
+          <Button onClick={() => scrollTo("contato")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-semibold text-base px-6 h-11">
+            Fale Conosco
           </Button>
         </div>
       </nav>
