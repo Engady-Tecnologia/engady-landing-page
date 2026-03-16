@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/engady-logo.png";
+import logo from "@/assets/engady-logo-original.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
