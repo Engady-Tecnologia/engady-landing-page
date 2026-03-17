@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, MapPin } from "lucide-react";
+import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/engady-logo.png";
 
