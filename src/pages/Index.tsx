@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, Phone, MapPin } from "lucide-react";
+import { Code2, Smartphone, Globe, Shield, ChevronRight, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/engady-logo.png";
 
@@ -201,9 +201,8 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {[
-              { icon: Mail, label: "E-mail", value: "contato@engady.com.br" },
-              { icon: Phone, label: "Telefone", value: "(00) 00000-0000" },
-              { icon: MapPin, label: "Localização", value: "Brasil" },
+              { icon: Mail, label: "E-mail", value: "engadytech@gmail.com" },
+              { icon: MapPin, label: "Localização", value: "Caicó/RN" },
             ].map((item) => (
               <div key={item.label} className="text-center p-6">
                 <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
