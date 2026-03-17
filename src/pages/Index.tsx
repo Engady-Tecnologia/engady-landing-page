@@ -202,6 +202,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {[
               { icon: Mail, label: "E-mail", value: "engadytech@gmail.com" },
+              { icon: Phone, label: "Telefone", value: "-" },
               { icon: MapPin, label: "Localização", value: "Caicó/RN" },
             ].map((item) => (
               <div key={item.label} className="text-center p-6">
